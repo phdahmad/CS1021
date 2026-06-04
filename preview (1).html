@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS1021 - برمجة الحاسب</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary:#0f172a;
+    --secondary:#2563eb;
+    --accent:#06b6d4;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --text:#334155;
+}
+
+body{
+    font-family:'Cairo',sans-serif;
+    background:linear-gradient(135deg,#eff6ff,#f8fafc);
+    color:var(--text);
+    min-height:100vh;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+    font-weight:800;
+}
+
+.hero h2{
+    font-size:1.8rem;
+    font-weight:600;
+    opacity:0.95;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+    opacity:0.85;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:-60px;
+    padding-bottom:60px;
+}
+
+.card{
+    background:var(--white);
+    border-radius:24px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(37,99,235,.18);
+}
+
+.icon{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.card p{
+    color:#64748b;
+    line-height:1.8;
+    min-height:70px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,var(--secondary),var(--accent));
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.info{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.info h2{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.info p{
+    max-width:800px;
+    margin:auto;
+    line-height:2;
+    color:#64748b;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.badge{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1e40af;
+    padding:8px 18px;
+    border-radius:999px;
+    margin-top:15px;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero h2{
+        font-size:1.4rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>CS1021</h1>
+    <h2>برمجة الحاسب</h2>
+    <div class="badge">طلبة التجسير</div>
+    <p>البوابة الرئيسية للمقرر الدراسي</p>
+</section>
+
+<div class="container">
+
+    <section class="cards">
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>محتوى الكورس</h3>
+            <p>
+                جميع المحاضرات والمواد التعليمية والأنشطة الخاصة بمقرر برمجة الحاسب.
+            </p>
+            <a class="btn"
+               href="https://github.com/phdahmad/CS1021/blob/main/Python_Healthcare_Course.html"
+               target="_blank">
+                فتح المحتوى
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📝</div>
+            <h3>الاختبار النصفي</h3>
+            <p>
+                منصة الاختبار النصفي الخاصة بطلبة التجسير.
+            </p>
+            <a class="btn"
+               href="https://phdahmad.github.io/tajseer/"
+               target="_blank">
+                دخول الاختبار
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>منصة مشاريع الطلبة</h3>
+            <p>
+                استعراض مشاريع الطلبة البرمجية والأعمال التطبيقية للمقرر.
+            </p>
+            <a class="btn"
+               href="https://phdahmad.github.io/stduents-projects/"
+               target="_blank">
+                عرض المشاريع
+            </a>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <h2>مرحباً بكم في مقرر برمجة الحاسب CS1021</h2>
+        <p>
+            تحتوي هذه الصفحة على جميع الروابط المهمة المتعلقة بالمقرر الدراسي،
+            بما في ذلك المحتوى التعليمي، الاختبار النصفي، ومنصة مشاريع الطلبة.
+            يرجى متابعة الصفحة بشكل مستمر للحصول على أحدث التحديثات والمواد التعليمية.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 CS1021 - Computer Programming Course
+</footer>
+
+</body>
+</html>
